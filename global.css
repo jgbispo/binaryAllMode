@@ -16,3 +16,21 @@ html {
   height: 100vh;
   width: 100vw;
 }
+
+footer{
+	width: 100vw;
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	justify-content: center;
+	align-content: center;
+	gap: 0.3rem;
+	font-size: 12px;
+	margin-bottom: 1rem;
+	font-weight: 100;
+}
+
+footer a{
+	text-decoration: none;
+	color: #32db2c;
+}

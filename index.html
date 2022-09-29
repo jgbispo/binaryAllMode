@@ -11,9 +11,9 @@
 	<header>
 		<h1>Bin for All</h1>
 		<nav>
-			<button onclick="binConvert()">Binary Converter</button>
-			<button onclick="binCalc()">Binary Calc</button>
-			<button onclick="binComplement()">Binary Complement</button>
+			<button id="btn-convert" onclick="binConvert()">Binary Converter</button>
+			<button id="btn-calc" onclick="binCalc()">Binary Calc</button>
+			<button id="btn-complement" onclick="binComplement()">Binary Complement</button>
 		</nav>
 	</header>
 
@@ -31,9 +31,9 @@
 					<option value="ascii">Text</option>
 				</select>
 			</div>
-			<div class="result-area">
+			<div  class="result-area">
 				<p>The number has been converted to:</p>
-				<span>25</span>
+				<span id="result-area"></span>
 			</div>
 		</div>
 		<div id="bin-calc" class="bin-calc">
@@ -62,11 +62,7 @@
 	</main>
 
 	<footer>
-		<p>
-			© 2022
-			<a href="https://bispolinks.vercel.app/" target="_blank">João Gustavo Soares Bispo.</a>
-			All Rights Reserved.
-		</p>
+			© 2022 <a href="https://bispolinks.vercel.app/" target="_blank">João Gustavo Soares Bispo.</a>All Rights Reserved.
 	</footer>
 	<script type="module" src="script.js"></script>
 </body>

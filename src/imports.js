@@ -1,8 +1,13 @@
+// Buttons
+export const btnBinary = document.getElementById("btn-convert")
+export const btnCalc = document.getElementById("btn-calc")
+export const btnComplement = document.getElementById("btn-complement")
+
 // Convert
 export const convertDiv = document.getElementById("bin-converter")
 export const numberConvert = document.getElementById("input-convert")
 export const optionConvert = document.getElementById("types")
-export const convertedArea = document.getElementById("converted-area")
+export const convertedArea = document.getElementById("result-area")
 
 // Calc
 export const calcDiv = document.getElementById("bin-calc")
