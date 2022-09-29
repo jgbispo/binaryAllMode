@@ -1,5 +1,5 @@
 input {
-  width: 60vw;
+  width: 30vw;
   padding: 12px;
   border: none;
 	background-color: #ccc;
@@ -24,3 +24,4 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+

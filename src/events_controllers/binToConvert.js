@@ -31,5 +31,5 @@ optionToConvert.addEventListener('change', (event) => {
 	type = event.target.value
 	const bin = numberToConvert.value
 	const value = bin2dec(bin, type)
-	convertedToArea.innerHTML = `<span>${value}</span>`
+	convertedToArea.innerHTML = `<span>${value}</span>` 
 });

@@ -10,3 +10,10 @@ button:hover{
 	background-color: #fa874d;
 	transform: translateY(-2px);
 }
+
+button:disabled{
+	cursor: default;
+	background: #ccc;
+	color:black;
+	transform: translateY(0px);
+}

@@ -4,13 +4,13 @@ export function bin2dec(number, type) {
 	
 	switch (type) {
 		case "decimal":
-		 	result = parseInt(number, 2).toString(10)
+		 	result = parseInt(number).toString(2)
 			break;
 		case "octal":
-			result =  parseInt(number, 2).toString(8)
+			result =  parseInt(number).toString(2)
 			break;
 		case "hex":
-			result = parseInt(number, 2).toString(16).toUpperCase()
+			result = parseInt(number).toString(2)
 			break;
 	}
 	return result;
