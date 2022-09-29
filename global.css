@@ -1,0 +1,18 @@
+@import url(./src/styles/header.css);
+@import url(./src/styles/binConverter.css);
+@import url(./src/styles/binCalc.css);
+
+*{
+	padding: 0;
+	margin: 0;
+	border: none;
+	display: block;
+	font-family: "Inter", sans-serif;
+	color: #ffffff;
+	background-color: #121214;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}

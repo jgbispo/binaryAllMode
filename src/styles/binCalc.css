@@ -1,0 +1,13 @@
+@import url(./select.css);
+@import url(./resultArea.css);
+
+.bin-calc{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}

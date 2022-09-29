@@ -1,0 +1,14 @@
+@import url(./input.css);
+@import url(./select.css);
+@import url(./resultArea.css);
+
+.bin-converter{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}

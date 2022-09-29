@@ -1,0 +1,17 @@
+.result-area{
+	width: 60vw;
+	display: flex;
+	gap: 0.4rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.result-area p{
+	color: #bdbdbd;
+	font-size: 18px;
+}
+
+.result-area span{
+	font-weight: bold;
+	font-size: 22px;
+}

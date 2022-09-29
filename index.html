@@ -4,8 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Bin for All</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="global.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -20,39 +19,48 @@
 
 	<main>
 		<div id="bin-converter" class="bin-converter">
+			<h3>Binary Converter</h3>
 			<input id="input-convert" type="number" placeholder="insert number for convert" />
-			<label class="types-label" for="types">Convert to:</label>
-			<select id="types" class="types-options">
-				<option value="binary">Binary</option>
-				<option value="decimal" selected="">Decimal</option>
-				<option value="octal">Octal</option>
-				<option value="hex">Hexadecimal</option>
-				<option value="ascii">Text</option>
-			</select>
-			<div class="converted-area">
-				<p id="converted-number">Converted number: 5</p> <!-- Vai para o js -->
+			<div class="select">
+				<label class="types-label" for="types">Convert to:</label>
+				<select id="types" class="types-options">
+					<option value="binary">Binary</option>
+					<option value="decimal" selected="">Decimal</option>
+					<option value="octal">Octal</option>
+					<option value="hex">Hexadecimal</option>
+					<option value="ascii">Text</option>
+				</select>
+			</div>
+			<div class="result-area">
+				<p>The number has been converted to:</p>
+				<span>25</span>
 			</div>
 		</div>
-
 		<div id="bin-calc" class="bin-calc">
+			<h3>Binary Calc</h3>
 			<input id="input-calc-one" type="number" placeholder="insert number" />
 
-			<label class="signals-label" for="signals">Choose a signals:</label>
-			<select id="signals" class="signals-option">
-				<option value="sum">+</option>
-				<option default value="sub">-</option>
-				<option value="div">/</option>
-				<option value="mult">*</option>
-			</select>
+			<div class="select">
+				<label class="signals-label" for="signals">Choose a signals:</label>
+				<select id="signals" class="signals-option">
+					<option value="sum">+</option>
+					<option default value="sub">-</option>
+					<option value="div">/</option>
+					<option value="mult">*</option>
+				</select>
+			</div>
 
 			<input id="input-calc-two" type="number" placeholder="insert number" />
-			<div class="calc-area">
+			<div class="result-area">
+				<p>The result is:</p>
+				<span>25</span>
 			</div>
 		</div>
 		<!-- 		<div class="bin-complement">
 			<input type="number" placeholder="insert number" />
 		</div> -->
 	</main>
+
 	<footer>
 		<p>
 			© 2022

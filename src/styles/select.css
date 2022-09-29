@@ -1,0 +1,18 @@
+.select{
+	display: flex;
+}
+
+.select label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.select select {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.select select:focus{
+	border: none
+} 
