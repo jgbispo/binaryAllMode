@@ -1,5 +1,6 @@
 // Buttons
-export const btnBinary = document.querySelector("#btn-convert")
+export const btnFromBinary = document.querySelector("#btn-from-convert")
+export const btnToBinary = document.querySelector("#btn-to-convert")
 export const btnCalc = document.querySelector("#btn-calc")
 export const btnComplement = document.querySelector("#btn-complement")
 

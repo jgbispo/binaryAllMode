@@ -1,5 +1,5 @@
 import {
-	btnBinary,
+	btnFromBinary,
 	convertDiv,
 	calcDiv,
 	numberConvert,
@@ -12,7 +12,7 @@ import { bin2dec } from '../controller/convert.js'
 // Binary Convert
 let type = "decimal"
 
-btnBinary.addEventListener("click", (e) => {
+btnFromBinary.addEventListener("click", (e) => {
 	e.preventDefault();
 	convertDiv.style.display = "flex";
 	calcDiv.style.display = "none";
@@ -27,6 +27,7 @@ numberConvert.addEventListener('change', (e) => {
 
 optionConvert.addEventListener('change', (event) => {
 	type = event.target.value
-	numberConvert.value = ""
-	convertedArea.innerHTML = ""
+	const bin = numberConvert.value
+	const value = bin2dec(bin, type)
+	convertedArea.innerHTML = `<span>${value}</span>`
 });
