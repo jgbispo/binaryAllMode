@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<title>Bin for All</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<link href="global.css" rel="stylesheet" type="text/css" />
@@ -19,12 +20,28 @@
 	</header>
 
 	<main>
-		<div id="bin-converter" class="bin-converter">
+		<div id="bin-from-converter" class="bin-converter">
 			<h3>Convert from Binary</h3>
-			<input id="input-convert" type="number" placeholder="insert the binary for convert" />
+			<input id="input-from-convert" type="number" placeholder="insert the binary for convert" />
 			<div class="select">
 				<label class="types-label" for="types">Convert to:</label>
-				<select id="types" class="types-options">
+				<select id="types-from" class="types-options">
+					<option value="decimal">Decimal</option>
+					<option value="octal">Octal</option>
+					<option value="hex">Hexadecimal</option>
+				</select>
+			</div>
+			<div class="result-from-area">
+				<p>The number has been converted to:</p>
+				<span id="result-area-convert"></span>
+			</div>
+		</div>
+		<div id="bin-to-converter" class="bin-converter">
+			<h3>Convert To Binary</h3>
+			<input id="input-to-convert" type="text" placeholder="insert number for convert" />
+			<div class="select">
+				<label class="types-label" for="types">Convert from:</label>
+				<select id="types-to" class="types-options">
 					<option value="decimal">Decimal</option>
 					<option value="octal">Octal</option>
 					<option value="hex">Hexadecimal</option>
@@ -32,9 +49,10 @@
 			</div>
 			<div class="result-area">
 				<p>The number has been converted to:</p>
-				<span id="result-area-convert"></span>
+				<span id="result-to-area-convert"></span>
 			</div>
 		</div>
+		
 		<div id="bin-calc" class="bin-calc">
 			<h3>Binary Calc</h3>
 			<input id="input-calc-one" type="number" placeholder="insert number" />

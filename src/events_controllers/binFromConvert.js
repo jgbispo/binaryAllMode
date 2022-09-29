@@ -1,4 +1,5 @@
 import {
+	convertToDiv,
 	btnFromBinary,
 	convertDiv,
 	calcDiv,
@@ -15,6 +16,7 @@ let type = "decimal"
 btnFromBinary.addEventListener("click", (e) => {
 	e.preventDefault();
 	convertDiv.style.display = "flex";
+	convertToDiv.style.display = "none";
 	calcDiv.style.display = "none";
 })
 

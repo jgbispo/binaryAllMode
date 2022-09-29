@@ -4,11 +4,17 @@ export const btnToBinary = document.querySelector("#btn-to-convert")
 export const btnCalc = document.querySelector("#btn-calc")
 export const btnComplement = document.querySelector("#btn-complement")
 
-// Convert
-export const convertDiv = document.querySelector("#bin-converter")
-export const numberConvert = document.querySelector("#input-convert")
-export const optionConvert = document.querySelector("#types")
-export const convertedArea = document.querySelector("#result-area-convert")
+// Convert from
+export const convertDiv = document.querySelector("#bin-from-converter")
+export const numberConvert = document.querySelector("#input-from-convert")
+export const optionConvert = document.querySelector("#types-from")
+export const convertedArea = document.querySelector("#result-from-area-convert")
+
+// Convert to
+export const convertToDiv = document.querySelector("#bin-to-converter")
+export const numberToConvert = document.querySelector("#input-to-convert")
+export const optionToConvert = document.querySelector("#types-to")
+export const convertedToArea = document.querySelector("#result-to-area-convert")
 
 // Calc
 export const calcDiv = document.querySelector("#bin-calc")

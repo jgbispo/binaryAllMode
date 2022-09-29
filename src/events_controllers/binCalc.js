@@ -2,6 +2,7 @@ import {
 	btnCalc,
 	btnComplement,
 	convertDiv,
+	convertToDiv,
 	calcDiv,
 	numberOneCalc,
 	numberTwoCalc,
@@ -16,6 +17,7 @@ let type = "sum"
 btnCalc.addEventListener("click", (e) => {
 	e.preventDefault();
 	calcDiv.style.display = "flex";
+	convertToDiv.style.display = "none";
 	convertDiv.style.display = "none";
 })
 
