@@ -1,17 +1,17 @@
 // Buttons
-export const btnBinary = document.getElementById("btn-convert")
-export const btnCalc = document.getElementById("btn-calc")
-export const btnComplement = document.getElementById("btn-complement")
+export const btnBinary = document.querySelector("#btn-convert")
+export const btnCalc = document.querySelector("#btn-calc")
+export const btnComplement = document.querySelector("#btn-complement")
 
 // Convert
-export const convertDiv = document.getElementById("bin-converter")
-export const numberConvert = document.getElementById("input-convert")
-export const optionConvert = document.getElementById("types")
-export const convertedArea = document.getElementById("result-area")
+export const convertDiv = document.querySelector("#bin-converter")
+export const numberConvert = document.querySelector("#input-convert")
+export const optionConvert = document.querySelector("#types")
+export const convertedArea = document.querySelector("#result-area")
 
 // Calc
-export const calcDiv = document.getElementById("bin-calc")
-export const numberOneCalc = document.getElementById("input-calc-one")
-export const numberTwoCalc = document.getElementById("input-calc-two")
-export const optionCalc = document.getElementById("signals")
-export const calcArea = document.getElementById("calc-area")
+export const calcDiv = document.querySelector("#bin-calc")
+export const numberOneCalc = document.querySelector("#input-calc-one")
+export const numberTwoCalc = document.querySelector("#input-calc-two")
+export const optionCalc = document.querySelector("#signals")
+export const calcArea = document.querySelector("#calc-area")
