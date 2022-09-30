@@ -2,93 +2,120 @@
 <html>
 
 <head>
-  <title>Bin for All</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link href="global.css" rel="stylesheet" type="text/css" />
+	<title>For All Binary</title>
+	<meta charset="utf-8">
+
+	<!-- 	Metas -->
+	<meta name="viewport" content="width=device-width">
+	<meta name="Description" content="For All Binary is an online tool to manipulate binary">
+	<meta name="author" content="João Gustavo Soares Bispo">
+
+	<!-- 	OG metas -->
+	<meta property="og:title" content="For All Binary" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image"
+		content="https://user-images.githubusercontent.com/83095574/193268229-a39005fd-b58f-43be-863e-cb17d03f1de4.png" />
+	<meta property="og:description" content="For All Binary is an online tool to manipulate binary" />
+
+	<!-- Twitter Metas -->
+	<meta name="twitter:title" content="For All Binary">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@jgsbispo">
+	<meta name="twitter:creator" content="@jgsbispo">
+	<meta name="twitter:image"
+		content="https://user-images.githubusercontent.com/83095574/193268229-a39005fd-b58f-43be-863e-cb17d03f1de4.png">
+
+	<link href="global.css" rel="stylesheet" type="text/css" />
+	<link href="https://user-images.githubusercontent.com/83095574/193269048-14a8496c-4afe-4b55-a3b8-9800d1a8c886.png"
+		rel="shortcut icon" type="image/ico" />
 </head>
 
 <body>
-  <header>
-    <h1>Bin for All</h1>
-    <nav>
-      <button id="btn-from-convert">Convert from Binary</button>
-      <button id="btn-to-convert" disabled="">Convert to Binary</button>
-      <button id="btn-calc">Binary Calc</button>
-      <button id="btn-complement">Binary Complement</button>
-    </nav>
-  </header>
+	<header>
+		<h1>For All Binary</h1>
+		<nav>
+			<button id="btn-from-convert">Convert from Binary</button>
+			<button id="btn-to-convert" disabled="">Convert to Binary</button>
+			<button id="btn-calc">Binary Calc</button>
+			<button id="btn-complement">Binary Complement</button>
+		</nav>
+	</header>
 
-  <main>
-    <div id="bin-from-converter" class="bin-converter">
-      <h3>Convert from Binary</h3>
-      <input id="input-from-convert" type="number" placeholder="insert the binary for convert" />
-      <div class="select">
-        <label class="types-label" for="types">Convert to:</label>
-        <select id="types-from" class="types-options">
-          <option value="decimal">Decimal</option>
-          <option value="octal">Octal</option>
-          <option value="hex">Hexadecimal</option>
-        </select>
-      </div>
-      <div class="result-area">
-        <p>The number has been converted to:</p>
-        <span id="result-from-area-convert"></span>
-      </div>
-    </div>
-    <div id="bin-to-converter" class="bin-converter">
-      <h3>Convert To Binary</h3>
-      <input id="input-to-convert" type="text" placeholder="insert number for convert" />
-      <div class="select">
-        <label class="types-label" for="types">Convert from:</label>
-        <select id="types-to" class="types-options">
-          <option value="decimal">Decimal</option>
-          <option value="octal">Octal</option>
-          <option value="hex">Hexadecimal</option>
-        </select>
-      </div>
-      <div class="result-area">
-        <p>The number has been converted to:</p>
-        <span id="result-to-area-convert"></span>
-      </div>
-    </div>
+	<main>
+		<div id="welcome" class="welcome">
+			<h2>Welcome to For All Binary</h2>
+			<span>I hope it's useful for you</span>
+		</div>
 
-    <div id="bin-calc" class="bin-calc">
-      <h3>Binary Calc</h3>
-      <input id="input-calc-one" type="number" placeholder="insert number" />
+		<div id="bin-from-converter" class="bin-converter">
+			<h3>Convert from Binary</h3>
+			<input id="input-from-convert" type="number" placeholder="insert the binary for convert" />
+			<div class="select">
+				<label class="types-label" for="types">Convert to:</label>
+				<select id="types-from" class="types-options">
+					<option value="decimal">Decimal</option>
+					<option value="octal">Octal</option>
+					<option value="hex">Hexadecimal</option>
+				</select>
+			</div>
+			<div class="result-area">
+				<p>The number has been converted to:</p>
+				<span id="result-from-area-convert"></span>
+			</div>
+		</div>
+		<div id="bin-to-converter" class="bin-converter">
+			<h3>Convert To Binary</h3>
+			<input id="input-to-convert" type="text" placeholder="insert number for convert" />
+			<div class="select">
+				<label class="types-label" for="types">Convert from:</label>
+				<select id="types-to" class="types-options">
+					<option value="decimal">Decimal</option>
+					<option value="octal">Octal</option>
+					<option value="hex">Hexadecimal</option>
+				</select>
+			</div>
+			<div class="result-area">
+				<p>The number has been converted to:</p>
+				<span id="result-to-area-convert"></span>
+			</div>
+		</div>
 
-      <div class="select">
-        <label class="signals-label" for="signals">Choose a signals:</label>
-        <select id="signals" class="signals-option">
-          <option value="sum">+</option>
-          <option default value="sub">-</option>
-          <option value="div">/</option>
-          <option value="mult">*</option>
-        </select>
-      </div>
+		<div id="bin-calc" class="bin-calc">
+			<h3>Binary Calc</h3>
+			<input id="input-calc-one" type="number" placeholder="insert number" />
 
-      <input id="input-calc-two" type="number" placeholder="insert number" />
-      <div class="result-area">
-        <p>The result is:</p>
-        <span id="result-area-calc"></span>
-      </div>
-    </div>
+			<div class="select">
+				<label class="signals-label" for="signals">Choose a signals:</label>
+				<select id="signals" class="signals-option">
+					<option value="sum">+</option>
+					<option default value="sub">-</option>
+					<option value="div">/</option>
+					<option value="mult">*</option>
+				</select>
+			</div>
 
-    <div id="bin-complement" class="bin-complement">
-      <h3>Binary Complement</h3>
-      <input id="input-complement" type="number" placeholder="insert number" />
-      <div class="result-area">
-        <p>The complement is:</p>
-        <span id="result-complement-one"></span>
-        <span id="result-complement-two"></span>
-      </div>
-    </div>
-  </main>
+			<input id="input-calc-two" type="number" placeholder="insert number" />
+			<div class="result-area">
+				<p>The result is:</p>
+				<span id="result-area-calc"></span>
+			</div>
+		</div>
 
-  <footer>
-    © 2022 <a href="https://bispolinks.vercel.app/" target="_blank">João Gustavo Soares Bispo.</a>All Rights Reserved.
-  </footer>
-  <script type="module" src="script.js"></script>
+		<div id="bin-complement" class="bin-complement">
+			<h3>Binary Complement</h3>
+			<input id="input-complement" type="number" placeholder="insert number" />
+			<div class="result-area">
+				<p>The complement is:</p>
+				<span id="result-complement-one"></span>
+				<span id="result-complement-two"></span>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		© 2022 <a href="https://bispolinks.vercel.app/" target="_blank">João Gustavo Soares Bispo.</a>All Rights Reserved.
+	</footer>
+	<script type="module" src="script.js"></script>
 </body>
 
 </html>

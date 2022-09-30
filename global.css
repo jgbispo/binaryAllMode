@@ -2,6 +2,7 @@
 @import url(./src/styles/binConverter.css);
 @import url(./src/styles/binComplement.css);
 @import url(./src/styles/binCalc.css);
+@import url(./src/styles/welcome.css);
 
 *{
 	padding: 0;
