@@ -1,5 +1,6 @@
 @import url(./src/styles/header.css);
 @import url(./src/styles/binConverter.css);
+@import url(./src/styles/binComplement.css);
 @import url(./src/styles/binCalc.css);
 
 *{

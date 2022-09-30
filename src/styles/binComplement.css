@@ -1,8 +1,7 @@
 @import url(./input.css);
-@import url(./select.css);
 @import url(./resultArea.css);
 
-.bin-converter{
+.bin-complement{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

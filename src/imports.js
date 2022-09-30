@@ -22,3 +22,9 @@ export const numberOneCalc = document.querySelector("#input-calc-one")
 export const numberTwoCalc = document.querySelector("#input-calc-two")
 export const optionCalc = document.querySelector("#signals")
 export const calcArea = document.querySelector("#result-area-calc")
+
+// Complement
+export const complementDiv = document.querySelector("#bin-complement")
+export const numberComplement = document.querySelector('#input-complement')
+export const complementOne = document.querySelector("#result-complement-one")
+export const complementTwo = document.querySelector("#result-complement-two")
