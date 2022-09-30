@@ -8,6 +8,7 @@ import {
   numberTwoCalc,
   optionCalc,
   calcArea,
+	textWelcome
 } from '../imports.js'
 
 import { calc } from '../controller/calc.js'
@@ -20,6 +21,7 @@ btnCalc.addEventListener("click", (e) => {
   convertToDiv.style.display = "none";
   complementDiv.style.display = "none";
   convertDiv.style.display = "none";
+  textWelcome.style.display = "none";
 })
 
 numberOneCalc.addEventListener('change', (e) => {

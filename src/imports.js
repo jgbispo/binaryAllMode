@@ -28,3 +28,6 @@ export const complementDiv = document.querySelector("#bin-complement")
 export const numberComplement = document.querySelector('#input-complement')
 export const complementOne = document.querySelector("#result-complement-one")
 export const complementTwo = document.querySelector("#result-complement-two")
+
+export const textWelcome = document.querySelector("#welcome")
+export const titleAll = document.querySelector("#title-all")

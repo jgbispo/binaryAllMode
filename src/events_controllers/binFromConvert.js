@@ -7,6 +7,7 @@ import {
   convertedArea,
   optionConvert,
   complementDiv,
+	textWelcome
 } from '../imports.js'
 
 import { bin2dec } from '../controller/convert.js'
@@ -19,6 +20,7 @@ btnFromBinary.addEventListener("click", (e) => {
   convertDiv.style.display = "flex"
   convertToDiv.style.display = "none"
   calcDiv.style.display = "none"
+  textWelcome.style.display = "none";
   complementDiv.style.display = "none"
 })
 

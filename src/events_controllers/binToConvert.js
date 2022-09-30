@@ -6,6 +6,7 @@ import {
 	numberToConvert,
 	convertedToArea,
 	optionToConvert,
+	textWelcome
 } from '../imports.js'
 
 import { bin2dec } from '../controller/convertTo.js'
@@ -16,6 +17,7 @@ let type = "decimal"
 btnToBinary.addEventListener("click", (e) => {
 	e.preventDefault();
 	convertToDiv.style.display = "flex";
+  textWelcome.style.display = "none";
 	calcDiv.style.display = "none";
 	convertDiv.style.display = "none";
 })
