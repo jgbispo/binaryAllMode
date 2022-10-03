@@ -1,17 +1,20 @@
 export function bin2dec(number, type) {
-	let interger = 0
+	let dec = 0
 	let result = ""
-	
+
 	switch (type) {
 		case "decimal":
-		 	result = parseInt(number).toString(2)
+			result = parseInt(number).toString(2)
 			break;
 		case "octal":
-			result =  parseInt(number).toString(2)
+			dec = parseInt((number).toString(2), 8)
+			result = parseInt(dec.toString(2))
 			break;
 		case "hex":
-			result = parseInt(number).toString(2)
+			dec = parseInt((number).toString(2), 16)
+			result = parseInt(dec.toString(2))
 			break;
 	}
 	return result;
 }
+
